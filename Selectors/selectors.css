@@ -1,0 +1,117 @@
+/* * {
+    color: aqua;
+    background-color: blue;
+} */
+
+body {
+    background-color: rgba(165, 42, 42, 0.322);
+}
+
+button {
+    font-size: 20px;
+    background-color: #1d3557;
+    color: aqua;
+}
+
+#signup {
+    background-color: #293241;
+    color: #f4f7fa;
+}
+
+#login {
+    background-color: #293241;
+    color: #f4f7fa;
+}
+
+span {
+    color: #7b2cbf;
+}
+
+.tag {
+    color: magenta;
+    background-color: aqua;
+}
+
+h1,
+h2 {
+    color: #1d3557;
+}
+
+.post a {
+    color: #7b2cbf;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+footer a {
+    color: blue;
+}
+
+/* direct child get >  */
+footer>a {
+    color: #023047;
+}
+
+input+button {
+    background-color: #023047;
+    color: aliceblue;
+}
+
+h2+button {
+    font-size: 20px;
+    background-color: magenta;
+    color: #293241;
+}
+
+/* attribute selector */
+
+input[type="password"] {
+    color: blue;
+}
+
+/* pseudo classes :hover, :active, :nth-of-type() */
+.post button:hover {
+    background-color: #023047;
+    color: aliceblue;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: white;
+    color: blue;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #d3f6f8;
+}
+
+/* pseudo elements ::after, ::before, ::first-letter, ::first-line, ::selection */
+
+h2::first-letter {
+    font-size: 35px;
+}
+
+p::first-line {
+    color: cyan
+}
+
+p::selection {
+    background-color: greenyellow;
+}
+
+button:hover {
+    background-color: #023047;
+    color: aliceblue;
+    font-size: 25px;
+}
+
+/* FOR Specificity INLINE, ID, CLASS, then (ELEMENT, PSEUDO-ELEMENT, SELECTORS)  */
+
+/* !Important THIS TAKE OVER ANY OTHER Specificity rule*/
+.post button {
+    background-color: darkviolet !important;
+    color: chartreuse;
+}
